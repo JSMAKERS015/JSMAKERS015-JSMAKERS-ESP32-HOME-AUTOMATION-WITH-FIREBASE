@@ -16,10 +16,7 @@
       min-height: 100vh;
       justify-content: space-between;
     }
-    h1 {
-      margin-top: 30px;
-      font-size: 1.8rem;
-    }
+    h1 { margin-top: 30px; font-size: 1.8rem; }
     .relay-card {
       display: inline-block;
       background-color: white;
@@ -30,14 +27,8 @@
       width: 220px;
       vertical-align: top;
     }
-    .relay-card h2 {
-      margin-bottom: 10px;
-      font-size: 1.3rem;
-    }
-    .relay-card p {
-      margin-bottom: 10px;
-      font-size: 1rem;
-    }
+    .relay-card h2 { margin-bottom: 10px; font-size: 1.3rem; }
+    .relay-card p { margin-bottom: 10px; font-size: 1rem; }
     .relay-card button {
       padding: 10px 20px;
       border: none;
@@ -46,102 +37,46 @@
       background-color: blue;
       cursor: pointer;
       font-size: 16px;
-	  width: 90%;
-      transition: opacity 0.3s ease;
-    }
-    .relay-card button:hover {
-      opacity: 0.8;
-    }
-    #allOffBtn, #logoutBtn {
-      max-width: 300px;
       width: 90%;
-      padding: 12px 25px;
-      font-size: 16px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      margin: 15px auto;
-      display: block;
-      color: white;
       transition: opacity 0.3s ease;
     }
-    #allOffBtn {
-      background-color: #d32f2f;
+    .relay-card button:hover { opacity: 0.8; }
+    #allOffBtn, #logoutBtn {
+      max-width: 300px; width: 90%; padding: 12px 25px; font-size: 16px;
+      border: none; border-radius: 10px; cursor: pointer; margin: 15px auto;
+      display: block; color: white; transition: opacity 0.3s ease;
     }
-    #allOffBtn:hover {
-      opacity: 0.8;
-    }
-    #logoutBtn {
-      background-color: #555;
-    }
-    #logoutBtn:hover {
-      opacity: 0.8;
-    }
-
-    /* Responsive layout */
-    #dashboard {
-      display: none;
-    }
+    #allOffBtn { background-color: #d32f2f; }
+    #allOffBtn:hover { opacity: 0.8; }
+    #logoutBtn { background-color: #555; }
+    #logoutBtn:hover { opacity: 0.8; }
+    #dashboard { display: none; }
     #loginForm {
-      max-width: 400px;
-      margin: 80px auto 20px;
-      background: white;
-      padding: 30px 20px;
-      border-radius: 15px;
+      max-width: 400px; margin: 80px auto 20px; background: white;
+      padding: 30px 20px; border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
     #loginForm input {
-      width: 100%;
-      padding: 12px 15px;
-      margin: 10px 0 20px;
-      font-size: 1rem;
-      border: 1.5px solid #ccc;
-      border-radius: 10px;
-      box-sizing: border-box;
-      outline-offset: 2px;
-      transition: border-color 0.3s ease;
+      width: 100%; padding: 12px 15px; margin: 10px 0 20px; font-size: 1rem;
+      border: 1.5px solid #ccc; border-radius: 10px; box-sizing: border-box;
+      outline-offset: 2px; transition: border-color 0.3s ease;
     }
-    #loginForm input:focus {
-      border-color: #1e88e5;
-    }
+    #loginForm input:focus { border-color: #1e88e5; }
     #loginForm button {
-      width: 100%;
-      background-color: #1e88e5;
-      color: white;
-      padding: 12px;
-      font-size: 18px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
+      width: 100%; background-color: #1e88e5; color: white; padding: 12px;
+      font-size: 18px; border: none; border-radius: 10px;
+      cursor: pointer; transition: background-color 0.3s ease;
     }
-    #loginForm button:hover {
-      background-color: #1565c0;
-    }
+    #loginForm button:hover { background-color: #1565c0; }
     #dashboard .relay-container {
-      max-width: 960px;
-      margin: 20px auto 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      max-width: 960px; margin: 20px auto 0;
+      display: flex; flex-wrap: wrap; justify-content: center;
     }
-    /* Smaller devices */
     @media (max-width: 700px) {
-      .relay-card {
-        width: 90%;
-        margin: 10px auto;
-        display: block;
-      }
-      body {
-        padding: 0 10px 60px;
-      }
+      .relay-card { width: 90%; margin: 10px auto; display: block; }
+      body { padding: 0 10px 60px; }
     }
-    footer {
-      font-size: 0.9rem;
-      color: #666;
-      padding: 10px 0;
-      margin-top: 40px;
-    }
+    footer { font-size: 0.9rem; color: #666; padding: 10px 0; margin-top: 40px; }
   </style>
 </head>
 <body>
@@ -163,33 +98,27 @@
         <p>Status: <span id="status1">Loading...</span></p>
         <button id="btn1">Toggle</button>
       </div>
-
       <div class="relay-card">
         <h2>Relay 2</h2>
         <p>Status: <span id="status2">Loading...</span></p>
         <button id="btn2">Toggle</button>
       </div>
-
       <div class="relay-card">
         <h2>Relay 3</h2>
         <p>Status: <span id="status3">Loading...</span></p>
         <button id="btn3">Toggle</button>
       </div>
-
       <div class="relay-card">
         <h2>Relay 4</h2>
         <p>Status: <span id="status4">Loading...</span></p>
         <button id="btn4">Toggle</button>
       </div>
     </div>
-
     <button id="allOffBtn">All OFF</button>
     <button id="logoutBtn">Logout</button>
   </div>
 
-  <footer>
-    Created by Js Maker's
-  </footer>
+  <footer>Created by Js Maker's</footer>
 
   <!-- Firebase SDKs -->
   <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
@@ -197,28 +126,25 @@
   <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
 
   <script>
-    // Firebase config
-const firebaseConfig = {
-  apiKey: "AIzaSyAVylBA-JaoUZLaDUO7OdqgxM0dsesL5AY",
-  authDomain: "js-makers-4d8cb.firebaseapp.com",
-  databaseURL: "https://js-makers-4d8cb-default-rtdb.firebaseio.com",
-  projectId: "js-makers-4d8cb",
-  storageBucket: "js-makers-4d8cb.firebasestorage.app",
-  messagingSenderId: "294339151973",
-  appId: "1:294339151973:web:45c2c1a2780e00c6631e8c",
-  measurementId: "G-DF60QLQ1H9"
-};
+    // Firebase config (keep this but never expose secrets other than apiKey)
+    const firebaseConfig = {
+      apiKey: "AIzaSyAVylBA-JaoUZLaDUO7OdqgxM0dsesL5AY",
+      authDomain: "js-makers-4d8cb.firebaseapp.com",
+      databaseURL: "https://js-makers-4d8cb-default-rtdb.firebaseio.com",
+      projectId: "js-makers-4d8cb",
+      storageBucket: "js-makers-4d8cb.appspot.com",
+      messagingSenderId: "294339151973",
+      appId: "1:294339151973:web:45c2c1a2780e00c6631e8c",
+      measurementId: "G-DF60QLQ1H9"
+    };
 
     firebase.initializeApp(firebaseConfig);
-
-    // Predefined login credentials (can be replaced with your logic)
-    const allowedEmail = "js.makers15@gmail.com";
-    const allowedPassword = "Jgcvirdee@15";
 
     const loginForm = document.getElementById("loginForm");
     const dashboard = document.getElementById("dashboard");
     const loginBtn = document.getElementById("loginBtn");
 
+    // Login securely with Firebase Auth
     loginBtn.addEventListener("click", () => {
       const email = document.getElementById("email").value.trim();
       const password = document.getElementById("password").value;
@@ -228,27 +154,26 @@ const firebaseConfig = {
         return;
       }
 
-      // Check hardcoded credentials first
-      if(email === allowedEmail && password === allowedPassword){
-        // Sign in with Firebase
-        firebase.auth().signInWithEmailAndPassword(email, password)
-          .then(userCredential => {
-            console.log("Signed in as", userCredential.user.email);
-            loginForm.style.display = "none";
-            dashboard.style.display = "block";
-            startRelayControl();
-          })
-          .catch(error => {
-            alert("Firebase login failed: " + error.message);
-          });
-      } else {
-        alert("Invalid email or password.");
-      }
+      firebase.auth().signInWithEmailAndPassword(email, password)
+        .then(userCredential => {
+          console.log("Signed in as", userCredential.user.email);
+          loginForm.style.display = "none";
+          dashboard.style.display = "block";
+          startRelayControl();
+        })
+        .catch(error => {
+          if (error.code === "auth/wrong-password" || error.code === "auth/user-not-found") {
+            alert("Invalid email or password.");
+          } else if (error.code === "auth/too-many-requests") {
+            alert("Too many failed login attempts. Please try again later.");
+          } else {
+            alert("Login failed: " + error.message);
+          }
+        });
     });
 
     function startRelayControl() {
       const db = firebase.database();
-
       const relays = [
         { id: 1, path: "relay1" },
         { id: 2, path: "relay2" },
@@ -268,7 +193,7 @@ const firebaseConfig = {
         });
 
         toggleButton.onclick = () => {
-          relayRef.get().then(snap => {
+          relayRef.once("value").then(snap => {
             relayRef.set(!snap.val());
           });
         };
